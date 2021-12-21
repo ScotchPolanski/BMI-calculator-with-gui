@@ -163,7 +163,7 @@ public class GUI extends javax.swing.JFrame {
     private void BerechnenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BerechnenButtonActionPerformed
         bmiErgebnisTextField.setText("");
         if (!koerpergroeßeTextField.getText().contains(".")) {
-            JOptionPane.showMessageDialog(null, "Kein Punkt (.) bei Körpergewicht!", "FEHLER", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Kein Punkt (.) bei Körpergröße!", "FEHLER", JOptionPane.ERROR_MESSAGE);
         } else {
             DecimalFormat zweiNachkomma = new DecimalFormat("#0.00"); // https://forum.chip.de/discussion/400137/java-bei-double-nur-2-nachkommastellen
             double koerperGewicht = Double.parseDouble(koerpergewichtTextField.getText());
